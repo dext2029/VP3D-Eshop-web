@@ -9582,3 +9582,6 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateY(-15px);
   }
 }
+.nav-item.nav-link:hover {
+  color: #5fb4f9;
+}
