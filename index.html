@@ -87,17 +87,26 @@
         </div>
     
         <div class="row align-items-center">
-            <!-- Logo and Text with Padding -->
-            <div class="col-lg-3 col-6 d-flex align-items-center" style="padding-top: 10px; padding-bottom: 10px;">
+            <!-- Logo and Text centered to Categories Button -->
+            <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center" style="padding-top: 10px; padding-bottom: 10px;">
                 <a href="" class="text-decoration-none d-flex align-items-center">
                     <img src="img/logo.jpeg" alt="Logo" class="logo-circle">
                     <h1 class="m-0 display-6 font-weight-bold text-dark">VP3D.</h1>
                 </a>
             </div>
         
-            
-            <!-- Cart Icon (moved to the right on both PC and mobile) -->
-            <div class="col-lg-3 col-12 d-flex justify-content-end text-right">
+            <!-- Categories Button (unchanged) -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between custom-bg text-white w-100" 
+                   data-toggle="collapse" 
+                   style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 style="color: rgb(255, 255, 255);" class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+            </div>
+
+            <!-- Cart Icon (on the right side) -->
+            <div class="col-lg-3 col-12 d-flex justify-content-lg-end justify-content-center text-right">
                 <a href="" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
