@@ -145,15 +145,16 @@
                 </button>
             </div>
     
-            <!-- Categories Navigation (Visible only on small screens when button is clicked) -->
-            <div class="col-lg-3 d-none d-lg-block">
-                <a class="btn shadow-none d-flex align-items-center justify-content-between custom-bg text-white w-100" 
-                   data-toggle="collapse" 
+            <!-- Categories Navigation (Always open on large screens, collapsible on mobile) -->
+            <div class="col-lg-3">
+                <a class="btn shadow-none d-none d-lg-flex align-items-center justify-content-between custom-bg text-white w-100" 
                    style="height: 65px; margin-top: -1px; padding: 0 30px;">
                     <h6 style="color: rgb(255, 255, 255);" class="m-0">Categories</h6>
                     <i class="fa fa-angle-down text-dark"></i>
                 </a>
-                <nav class="collapse show position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
+                <!-- This menu is always visible on large screens (PC), collapsible on mobile -->
+                <nav class="collapse d-lg-block show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" 
+                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
                     <div class="navbar-nav w-100 overflow-hidden" style="height: 164px">
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">Formula 1 <i class="fa fa-angle-down float-right mt-1"></i></a>
@@ -180,41 +181,10 @@
                         </div>
                     </div>
                 </nav>
-                <div id="header-carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="height: 410px;">
-                            <img class="img-fluid" src="img/img1.jpeg" alt="Image">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">F1 klíčenky</h3>
-                                    <a href="" class="btn btn-light py-2 px-3">Kup teď</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="height: 410px;">
-                            <img class="img-fluid" src="img/img2.jpeg" alt="Image">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">F1 klíčenky</h3>
-                                    <a href="" class="btn btn-light py-2 px-3">Kup teď</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                            <span class="carousel-control-prev-icon mb-n2"></span>
-                        </div>
-                    </a>
-                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                            <span class="carousel-control-next-icon mb-n2"></span>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
+    
     <!-- Navbar End -->
 
 
