@@ -6104,7 +6104,8 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #5FB4F9 !important;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,180,249,1) 71%, rgba(0,212,255,1) 100%);
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
