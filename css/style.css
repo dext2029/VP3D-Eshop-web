@@ -6109,7 +6109,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary270 {
-  background: linear-gradient(270deg, rgba(15,10,101,1) 0%, rgba(95,180,249,1) 67%, rgba(0,212,255,1) 100%) !important;
+  background: linear-gradient(270deg, rgba(147,140,255,1) 0%, rgba(95,180,249,1) 75%, rgba(95,186,237,1) 100%) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
