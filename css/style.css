@@ -6118,13 +6118,6 @@ button.bg-secondary:focus {
   background-color: #bac9ff !important;
 }
 
-.full-width-footer {
-  width: 100vw; 
-  margin-left: 0;
-  margin-right: 0;
-  padding: 50px 0;
-}
-
 .bg-success {
   background-color: #28a745 !important;
 }
