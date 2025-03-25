@@ -6058,7 +6058,8 @@ a.close.disabled {
   width: 2rem;
   height: 2rem;
   vertical-align: text-bottom;
-  background-color: currentColor;
+  background: rgb(19,14,108);
+  background: linear-gradient(90deg, rgba(19,14,108,1) 0%, rgba(9,9,121,1) 26%, rgba(0,127,255,1) 100%);
   border-radius: 50%;
   opacity: 0;
   animation: spinner-grow .75s linear infinite;
