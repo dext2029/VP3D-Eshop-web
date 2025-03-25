@@ -35,6 +35,10 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
+        #footer-left, #footer-right {
+    text-align: center;
+}
+
     /* For PC (large screens), move text 100px to the right */
     @media (min-width: 768px) {
         .footer-text {
@@ -392,7 +396,7 @@
 <div class="bg-secondary270 text-dark mt-5 pt-5" style="width: 100%; margin: 0; padding: 0;">
     <div class="container-fluid p-0">
         <!-- First Row: Contact Info -->
-        <div class="row w-100 m-0 d-flex justify-content-start" id="footer-left">
+        <div class="row w-100 m-0 d-flex justify-content-center text-center" id="footer-left">
             <div class="col-lg-4 col-md-12 mb-5 p-0">
                 <a href="" class="text-decoration-none">
                     <h1 class="m-0 display-6 font-weight-bold" style="color: rgb(23, 23, 23);">VP3D.©</h1>
@@ -404,9 +408,8 @@
         </div>
 
         <!-- Second Row: Copyright Section -->
-        <div class="row border-top border-light w-100 m-0 py-4 d-flex justify-content-start" id="footer-right">
-            <!-- This is where we add margin for positioning -->
-            <div class="col-md-6 p-0 text-center text-md-left">
+        <div class="row border-top border-light w-100 m-0 py-4 d-flex justify-content-center text-center" id="footer-right">
+            <div class="col-md-6 p-0">
                 <p class="mb-md-0 text-dark">
                     &copy; <a class="text-dark font-weight-semi-bold" href="">VP3D</a>
                 </p>
@@ -415,7 +418,6 @@
     </div>
 </div>
 <!-- Footer End -->
-
 </body>
 
 </html>
