@@ -35,6 +35,21 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
+        
+  @media (min-width: 768px) {
+        /* For PC (large screens), move text 100px to the right */
+        .footer-text {
+            padding-left: 100px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        /* For mobile (small screens), move text 60px to the right */
+        .footer-text {
+            padding-left: 60px;
+        }
+    }
+        
         body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
@@ -389,7 +404,7 @@
             </div>
         </div>
         <div class="row border-top border-light w-100 m-0 py-4">
-            <div class="col-md-6 p-0 text-md-left text-center">
+            <div class="col-md-6 p-0 text-md-left text-center" style="padding-left: 30px;">
                 <p class="mb-md-0 text-dark">
                     &copy; <a class="text-dark font-weight-semi-bold" href="">VP3D</a>
                 </p>
