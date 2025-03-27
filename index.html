@@ -91,11 +91,13 @@
 </head>
 
 <body>
+
 <!-- Topbar Start -->
 <div class="container-fluid p-0">
     <div class="row bg-secondary py-2 px-xl-5">
         <div class="col-lg-6"></div>
         <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+            <!-- Social Icons -->
             <div class="d-inline-flex align-items-center">
                 <a class="text-dark px-2" href="https://www.facebook.com/profile.php?id=61573792864700">
                     <i class="fab fa-facebook-f"></i>
@@ -110,37 +112,29 @@
         </div>
     </div>
 
+    <div class="row align-items-center px-xl-5">
+        <!-- Logo -->
+        <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center" style="padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 0px;">
+            <a href="" class="text-decoration-none d-flex align-items-center">
+                <img src="img/logo.jpeg" alt="Logo" class="logo-circle">
+                <h1 class="m-0 display-6 font-weight-bold text-dark ml-2" style="line-height: 1;">VP3D.</h1>
+            </a>
+        </div>
 
-        <div class="row align-items-center">
-            <!-- Logo and Text aligned to the left with an offset of 75px for larger screens -->
-            <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center" style="padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 0px;">
-                <a href="" class="text-decoration-none d-flex align-items-center">
-                    <img src="img/logo.jpeg" alt="Logo" class="logo-circle">
-                    <h1 class="m-0 display-6 font-weight-bold text-dark ml-2" style="line-height: 1;">VP3D.</h1>
-                </a>
+        <!-- Empty space to push the cart to the right -->
+        <div class="col-lg-6 d-none d-lg-block"></div>
+
+        <!-- Cart Icon (Always on the far right) -->
+        <div class="col-lg-3 col-6 d-flex justify-content-end align-items-center">
+            <div id="cart-container">
+                <button id="cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </button>
             </div>
         </div>
-        <!-- Shopping Cart Icon -->
-        <div id="cart-container">
-             <button id="cart-icon">
-                 🛒 <span id="cart-count">0</span>
-            </button>
-        </div>
-
-        
-
-
-        <!-- Add a media query to adjust for mobile -->
-        <style>
-            @media (max-width: 768px) {
-                .col-6 {
-                    padding-left: 125px !important; /* Adjusted for mobile to move logo 50px more to the left */
-                }
-            }
-        </style>
-
-
-    <!-- Topbar End -->
+    </div>
+</div>
+<!-- Topbar End -->
 
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
@@ -239,6 +233,8 @@
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
                         <a href="#" class="btn btn-sm text-dark p-0 add-to-cart" 
                             data-name="Monaco Track Wall Art" data-price="0" data-image="img/monaco.jpeg">
+                            <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                        </a>
                     </div>
                 </div>
             </div>
