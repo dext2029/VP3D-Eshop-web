@@ -9277,16 +9277,17 @@ button.bg-dark:focus {
   color: #171717 !important;
 }
 
-.text-primary:hover{
-  color: #17a2b8 !important;
-}
-
-a.text-primary:hover {
+.text-primary:hover {
   color: #17a2b8 !important;
 }
 
 a.text-primary:focus {
   color: #17a2b8 !important;
+}
+
+.card-footer a.btn:hover {
+  color: #17a2b8 !important; 
+  background-color: transparent !important; 
 }
 
 .text-secondary {
