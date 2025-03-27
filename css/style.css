@@ -9286,8 +9286,8 @@ a.text-primary:focus {
 }
 
 .card-footer a.btn:hover {
-  color: #17a2b8 !important; 
-  background-color: transparent !important; 
+  color: #17a2b8; 
+  background-color: transparent !important;
 }
 
 .text-secondary {
