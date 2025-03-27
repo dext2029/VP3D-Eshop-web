@@ -9286,10 +9286,14 @@ a.text-primary:focus {
 }
 
 .card-footer a.btn:hover {
-  color: #17a2b8; 
-  background-color: transparent !important;
+  color: #17a2b8 !important; /* Change text color to blue (same as .text-primary color) */
+  background-color: transparent !important; /* Keep background unchanged */
 }
 
+/* Ensure the icon also changes to the same color on hover */
+.card-footer a.btn:hover .text-primary {
+  color: #17a2b8 !important; /* Icon changes to blue */
+}
 .text-secondary {
   color: #EDF1FF !important;
 }
