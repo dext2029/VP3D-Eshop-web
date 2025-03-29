@@ -9698,7 +9698,22 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem; /* Adjust as needed */
+  position: relative;
+  border: none; /* Remove any unwanted borders */
+}
+
+.section-title::before,
+.section-title::after {
+  display: none; /* Hide the lines that are causing the issue */
+}
+
 .bi-cart3 {
-  font-size: 1.5rem; /* Adjust size */
-  margin-right: 5px; /* Space between icon and text */
+  font-size: 1.5rem; /* Adjust icon size */
+  position: relative;
+  top: 2px; /* Fine-tune vertical alignment */
 }
