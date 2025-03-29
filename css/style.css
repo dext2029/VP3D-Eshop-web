@@ -9702,18 +9702,36 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-flex;
   align-items: center;
   font-weight: bold;
-  font-size: 2rem; /* Adjust as needed */
+  font-size: 2rem;
   position: relative;
-  border: none; /* Remove any unwanted borders */
 }
 
 .section-title::before,
 .section-title::after {
-  display: none; /* Hide the lines that are causing the issue */
+  content: "";
+  position: absolute;
+  width: 50px; /* Adjust line length */
+  height: 3px; /* Line thickness */
+  background: black; /* Line color */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-title::before {
+  left: 0;
+}
+
+.section-title::after {
+  right: 0;
+}
+
+.section-title span {
+  background: white; /* Match background color to hide line */
+  padding: 0 10px; /* Add spacing to prevent line from touching icon */
 }
 
 .bi-cart3 {
-  font-size: 1.5rem; /* Adjust icon size */
+  font-size: 1.5rem;
   position: relative;
-  top: 2px; /* Fine-tune vertical alignment */
+  top: 2px; /* Adjust vertical alignment */
 }
