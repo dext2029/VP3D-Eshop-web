@@ -1,85 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>VP3D. E-Shop</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">VP3D.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Shop</a></li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>VP3D.EU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+ 
+
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #footer-left, #footer-right {
+    text-align: center;
+}
+
+    /* For PC (large screens), move text 100px to the right */
+    @media (min-width: 768px) {
+        .footer-text {
+            padding-left: 100px;
+        }
+    }
+
+    /* For mobile (small screens), move text 60px to the right */
+    @media (max-width: 767px) {
+        .footer-text {
+            padding-left: 60px;
+        }
+    }  
+        body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+        .dropdown-menu .dropdown-item:hover {
+    background-color: #5FB4F9 !important; /* Or whatever you prefer */
+    color: white !important;
+}
+
+        .navbar-nav .nav-link:hover,
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color:  #5FB4F9 !important; /* Or your preferred color */
+    color: #ffffff !important; /* Text color on hover */
+}
+
+.logo-circle {
+            height: 50px; 
+            width: 50px;   
+            border-radius: 50%; 
+            border: 2px solid #000000;  
+            object-fit: cover; 
+            margin-right: 10px; 
+          }
+        .d-flex {
+    display: flex;
+    align-items: center; 
+}
+.custom-bg {
+    background-color: #171717 !important; 
+    color: white !important; 
+}
+.cart-left {
+    margin-left: 1000px;
+}
+    </style>
+</head>
+
+<body>
+<!-- Topbar Start -->
+<div class="container-fluid p-0">
+    <div class="row bg-secondary py-2 px-xl-5">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-dark px-2" href="https://www.facebook.com/profile.php?id=61573792864700">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark px-2" href="https://www.instagram.com/vp3dtisk/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-dark pl-2" href="https://www.youtube.com/@vp3dtisk">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
-        </nav>
-        <!-- Header-->
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/Monaco.jpeg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Monaco F1 Track Wall Art</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">500Kč</span>
-                                    300Kč
+        </div>
+    </div>
+
+
+        <div class="row align-items-center">
+            <!-- Logo and Text aligned to the left with an offset of 75px for larger screens -->
+            <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center" style="padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 0px;">
+                <a href="" class="text-decoration-none d-flex align-items-center">
+                    <img src="img/logo.jpeg" alt="Logo" class="logo-circle">
+                    <h1 class="m-0 display-6 font-weight-bold text-dark ml-2" style="line-height: 1;">VP3D.</h1>
+                </a>
+            </div>
+        </div>
+        
+        
+
+
+        <!-- Add a media query to adjust for mobile -->
+        <style>
+            @media (max-width: 768px) {
+                .col-6 {
+                    padding-left: 125px !important; /* Adjusted for mobile to move logo 50px more to the left */
+                }
+            }
+        </style>
+
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            <!-- Categories Button (Visible only on small screens) -->
+            <div class="col-12 d-block d-lg-none">
+                <button class="btn shadow-none d-flex align-items-center justify-content-between custom-bg text-white w-100" 
+                        data-toggle="collapse" 
+                        data-target="#navbar-vertical" 
+                        aria-expanded="false" 
+                        aria-controls="navbar-vertical"
+                        style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 style="color: rgb(255, 255, 255);" class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-light"></i>
+                </button>
+            </div>
+    
+            <!-- Categories Navigation (Always open on large screens, collapsible on mobile) -->
+            <div class="col-lg-3" style="padding-bottom: 25px;">
+                <a class="btn shadow-none d-none d-lg-flex align-items-center justify-content-between custom-bg text-white w-100" 
+                   style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 style="color: rgb(255, 255, 255);" class="m-0">Categories</h6>
+                </a>
+                <!-- This menu is always visible on large screens (PC), collapsible on mobile -->
+                <nav class="collapse d-lg-block show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" 
+                     id="navbar-vertical" style="width: 100%; z-index: 1;">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 123px;">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Formula 1 <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondaryblue border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Track Wall Art</a>
+                                <a href="" class="dropdown-item">Klíčenky</a>
+                            </div>
+                        </div>
+                         <a href="" class="nav-item nav-link">Klíčenky</a>
+                         <a href="" class="nav-item nav-link">3D Tisk Na Zákazku</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9 padding-top: 25px;">
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 410px;">
+                            <img class="img-fluid" src="img/img1.jpeg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">F1 Klíčenky</h3>
+                                    <a href="" class="btn btn-light py-2 px-3">Kup Teď</a>
                                 </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="carousel-item" style="height: 410px;">
+                            <img class="img-fluid" src="img/img2.jpeg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">F1 Klíčenky</h3>
+                                    <a href="" class="btn btn-light py-2 px-3">Kup Teď</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-prev-icon mb-n2"></span>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-next-icon mb-n2"></span>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; VP3D. 2025</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Shop</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/Monaco.jpeg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Monaco Track Wall Art</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>300Kč</h6><h6 class="text-muted ml-2"><del>500Kč</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"> <i class="fas fa-eye text-primary mr-1" style="color: #17a2b8;"></i>Prohlédnout</a>
+                          <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1" style="color: #17a2b8;"></i>Přidat do košíku</a>                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+   
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-1.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-2.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-3.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-4.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-5.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-6.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-7.jpg" alt="">
+                    </div>
+                    <div class="vendor-item border p-4">
+                        <img src="img/vendor-8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+<!-- Footer Start -->
+<div class="bg-secondary270 text-dark mt-5 pt-5" style="width: 100%; margin: 0; padding: 0;">
+    <div class="container-fluid p-0">
+        <!-- First Row: Contact Info -->
+        <div class="row w-100 m-0 d-flex justify-content-center text-center" id="footer-left">
+            <div class="col-lg-4 col-md-12 mb-5 p-0">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-6 font-weight-bold" style="color: rgb(23, 23, 23);">VP3D.©</h1>
+                </a>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Frenštát pod Radhoštěm</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>lukas.vyborny@vp3d.eu</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+420 704 515 495 / +420 607 027 486</p>
+            </div>
+        </div>
+
+        <!-- Second Row: Copyright Section -->
+        <div class="row border-top border-light w-100 m-0 py-4 d-flex justify-content-center text-center" id="footer-right">
+            <div class="col-md-6 p-0">
+                <p class="mb-md-0 text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="">VP3D</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+</body>
+
 </html>
