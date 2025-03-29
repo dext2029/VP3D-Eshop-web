@@ -9733,5 +9733,6 @@ a.text-dark:hover, a.text-dark:focus {
 .bi-cart3 {
   font-size: 1.5rem;
   position: relative;
-  top: 2px; /* Adjust vertical alignment */
+  top: -2px; /* Move icon slightly up to align with text */
 }
+
